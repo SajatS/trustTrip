@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - TrustTrip</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 600;
+
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      padding: 2rem;
+    }
+
+    #welcome {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .interests {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .interest-box {
+      bwidth: 250px;
+      height: 150px;
+      border-radius: 12px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      font-weight: bold;
+      text-decoration: none;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #fff;
+      padding:1 rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      font-size: 1rem;
+      padding: 3rem;
+      border-radius: 8px;
+      flex: 1 1 200px;
+      text-align: center;
+      text-decoration: none;
+      color: #01032b;
+      font-weight: 600;
+      transition: transform 0.2s ease;
+    }
+    .interest-box:hover {
+      transform: translateY(-4px);
+      transform: scale(1.05);
+    }
+    .recommendations, .reviews {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+    }
+    .card {
+      margin-bottom: 1rem;
+    }
+    .review-box {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      border-top: 1px solid #ddd;
+      padding: 1rem 0;
+    }
+    .review-box {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 1rem;
+  transition: 0.3s ease;
+}
+.review-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
+}
+
+    .reviewer-pic {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .review-content a {
+      color: #1e1e2f;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .slideshow-section {
+  position: relative;
+  text-align: center;
+  padding: auto;
+  background:url('images/where-to-next-bg.jpg');
+  background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+
+  color: black;
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+
+.slideshow-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.slide {
+  display: none;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0,0,0,0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 2.2rem;
+  color: white;
+}
+
+.fade {
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="dashboard.html" style="color:white; text-decoration: none; ">TrustTrip</a></h1>
+    <nav>
+      <a href="review.html">Write Review</a>
+      <a href="forum.html">Forum</a>
+      <a href="chat.html">Chat</a>
+      <a href="profile.html">My Account</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+      <!-- Slideshow Section -->
+<section class="slideshow-section">
+  <h2 class="slideshow-title">Where to Next?</h2>
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="https://images.unsplash.com/photo-1468413253725-0d5181091126?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Beach Paradise">
+      <div class="caption">Beach Paradise</div>
+    </div>
+    <div class="slide fade">
+      <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mountain Escape">
+      <div class="caption">Mountain Escape</div>
+    </div>
+    <div class="slide fade">
+      <img src="https://images.unsplash.com/photo-1627938823193-fd13c1c867dd?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dg" alt="Historic City">
+      <div class="caption">Historic City</div>
+    </div>
+  </div>
+</section>
+
+
+    <div id="welcome"></div>
+    <h2>Your Interests</h2>
+    <div class="interests" id="interestBoxes"></div>
+
+    <div class="recommendations" id="topPicks">
+      <h2>Top Picks Based on Your Interests</h2>
+    </div>
+
+    <div class="recommendations" style="margin-top: 2rem; background: linear-gradient(to right, #f0f4ff, #ffffff);">
+    <h2 style="margin-bottom: 1rem;">Your Travel Stats</h2>
+    <ul style="list-style: none; padding-left: 0;">
+      <li style="margin-bottom: 0.5rem;">🌍 Trips Planned: <strong>5</strong></li>
+      <li style="margin-bottom: 0.5rem;">📝 Reviews Written: <strong>2</strong></li>
+      <li style="margin-bottom: 0.5rem;">💫 Dream Destinations Added: <strong>6</strong></li>
+    </ul>
+    </div>
+
+    <div class="dreams" id="dreamDestinations">
+      <h2>Your Dream Destinations</h2>
+      <ul id="dreamList"></ul>
+    </div>
+
+    <div class="reviews" id="filteredReviews">
+      <h2>Recent Reviews Matching Your Interests</h2>
+    </div>
+  </div>
+
+  <script>
+    const data = JSON.parse(localStorage.getItem('userInterests')) || {};
+    const interests = data.interests || [];
+    const duration = data.duration || '';
+    const dreams = data.dreams || [];
+
+    const interestMap = {
+      'Beaches': { icon: '🏖', link: 'beach.html', label: 'Beaches', rec: 'Radhanagar Beach, Andaman',background: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'},
+      'Mountains': { icon: '🏔', link: 'mountain.html', label: 'Mountains', rec: 'Manali, Himachal Pradesh' , background:'https://images.unsplash.com/photo-1540270776932-e72e7c2d11cd?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'},
+      'Cities': { icon: '🏙', link: 'city.html', label: 'Urban Exploration', rec: 'Mumbai Heritage Walk', background:'https://images.unsplash.com/photo-1561731172-9d906d7b13bf?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+      'Wildlife & Safaris': { icon: '🌿', link: 'wildlife.html', label: 'Wildlife & Nature', rec: 'Jim Corbett National Park' },
+      'Culture': { icon: '🏛', link: 'culture.html', label: 'Culture & History', rec: 'Jaipur City Palace' ,background:'https://images.unsplash.com/photo-1585607344893-43a4bd91169a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'},
+      'Food': { icon: '🍲', link: 'food.html', label: 'Food & Culinary', rec: 'Old Delhi Food Trail' },
+      'Festivals': { icon: '🎉', link: 'festivals.html', label: 'Festivals', rec: 'Pushkar Mela' },
+      'Adventure': { icon: '🧗', link: 'adventure.html', label: 'Adventure Sports', rec: 'Rishikesh River Rafting',background:'https://plus.unsplash.com/premium_photo-1677002240252-af3f88114efc?q=80&w=2925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }
+    };
+
+    document.getElementById('welcome').textContent = `Hi there! Here's your personalized travel dashboard ✨`;
+
+    const boxContainer = document.getElementById('interestBoxes');
+    interests.forEach(interest => {
+      const info = interestMap[interest] || {};
+      const box = document.createElement('a');
+      box.className = 'interest-box';
+      box.href = info.link || '#';
+      box.innerHTML = `${info.icon || '📍'} ${info.label || interest}`;
+      box.style.backgroundImage = `url('${info.background}')`;
+      boxContainer.appendChild(box);
+    });
+
+    const topPicks = document.getElementById('topPicks');
+    interests.forEach(interest => {
+      const info = interestMap[interest] || {};
+      const div = document.createElement('div');
+      div.className = 'card';
+      div.innerHTML = `<strong>${info.rec || interest}</strong> - Based on your interest in ${interest}`;
+      topPicks.appendChild(div);
+    });
+
+    const dreamList = document.getElementById('dreamList');
+    dreams.filter(Boolean).forEach(place => {
+      const li = document.createElement('li');
+      li.textContent = place;
+      dreamList.appendChild(li);
+    });
+
+    const reviewSection = document.getElementById('filteredReviews');
+    const reviews = [
+      { name: 'Aarav', link: 'profile_aarav.html', place: 'Leh-Ladakh', text: 'Stunning views and peaceful monasteries.', tags: ['Mountains'], img: 'https://images.unsplash.com/photo-1628260412297-a3377e45006f?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+      { name: 'Siya', link: 'profile_siya.html', place: 'Arambol Beach', text: 'Chill vibes, perfect for solo trips.', tags: ['Beaches'], img: 'reviewer2.jpg' },
+      { name: 'Rishi', link: 'profile_rishi.html', place: 'Jaipur Food Walk', text: 'Kachoris and kulfi — cultural delight!', tags: ['Culture', 'Food'], img: 'reviewer3.jpg' }
+    ];
+
+    reviews.forEach(r => {
+      if (r.tags.some(tag => interests.includes(tag))) {
+        const box = document.createElement('div');
+        box.className = 'review-box';
+        box.innerHTML = `
+          <img src="${r.img}" class="reviewer-pic" alt="${r.name}">
+          <div class="review-content">
+            <p><a href="${r.link}">${r.name}</a> rated <strong>${r.place}</strong> – "${r.text}"</p>
+          </div>
+        `;
+        reviewSection.appendChild(box);
+      }
+    });
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  const slides = document.getElementsByClassName("slide");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) { slideIndex = 1 }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 3000); // 3 seconds per slide
+}
+  </script>
+</body>
+</html>

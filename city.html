@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explorations - TrustTrip</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .hero {
+      background: url('https://source.unsplash.com/1600x500/?city,architecture') center/cover no-repeat;
+      padding: 4rem 2rem;
+      color: white;
+      text-shadow: 1px 1px 6px #000;
+      border-radius: 0 0 20px 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 1.25rem;
+    }
+    .container {
+      padding: 2rem;
+    }
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .card {
+      flex: 1 1 300px;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h3 {
+      margin-top: 0;
+    }
+    .reviews {
+      background: #fff;
+      margin-top: 1rem;
+      padding: 0.75rem 1rem;
+      border-top: 1px solid #eee;
+      font-size: 0.95rem;
+    }
+    .reviewer {
+      font-weight: 600;
+      color: #1e1e2f;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>🏙️ City Explorations</h1>
+    <p>Feel the pulse of urban life and iconic skylines</p>
+  </div>
+  <div class="container">
+    <div class="card-grid">
+      <div class="card">
+        <img src="https://source.unsplash.com/600x400/?mumbai" alt="Mumbai Heritage Walk">
+        <div class="card-content">
+          <h3>Mumbai Heritage Walk</h3>
+          <p>Colonial charm, bustling markets, and street food. Rated 4.6 ★</p>
+          <div class="reviews">
+            <p><span class="reviewer">@Anaya</span>: "Loved the mix of British architecture and modern chaos."</p>
+            <p><span class="reviewer">@Jay</span>: "Colaba street food tour is a must!"</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/600x400/?jaipur" alt="Jaipur City Palace">
+        <div class="card-content">
+          <h3>Jaipur City Palace</h3>
+          <p>Pink city magic, regal architecture, and culture. Rated 4.8 ★</p>
+          <div class="reviews">
+            <p><span class="reviewer">@Smriti</span>: "The palace murals are Instagram goals!"</p>
+            <p><span class="reviewer">@Karan</span>: "Perfect for a cultural city break."</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/600x400/?bangalore" alt="Bangalore Nightlife">
+        <div class="card-content">
+          <h3>Bangalore Nightlife</h3>
+          <p>Tech meets tradition, rooftop cafes and live music. Rated 4.5 ★</p>
+          <div class="reviews">
+            <p><span class="reviewer">@Rishi</span>: "Craft beer, cool bands, and electric vibe."</p>
+            <p><span class="reviewer">@Megha</span>: "It’s safe and buzzing after dark."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

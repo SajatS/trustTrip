@@ -1,0 +1,151 @@
+<!-- === ENHANCED INTEREST PAGE: mountain.html with reviews === -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mountains - TrustTrip</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 600;
+
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1615752592661-e49b4b13dfd7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+      padding: 4rem 2rem;
+      margin-top: 2rem;
+      color: white;
+      text-shadow: 1px 1px 6px #000;
+      border-radius: 0 0 20px 20px;
+    
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 1.25rem;
+    }
+    .container {
+      padding: 2rem;
+    }
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .card {
+      flex: 1 1 300px;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h3 {
+      margin-top: 0;
+    }
+    .reviews {
+      background: #fff;
+      margin-top: 1rem;
+      padding: 0.75rem 1rem;
+      border-top: 1px solid #eee;
+      font-size: 0.95rem;
+    }
+    .reviewer {
+      font-weight: 600;
+      color: #1e1e2f;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="dashboard.html" style="color:white; text-decoration: none; ">TrustTrip</a></h1>
+    <nav>
+      <a href="review.html">Write Review</a>
+      <a href="forum.html">Forum</a>
+      <a href="chat.html">Chat</a>
+      <a href="profile.html">My Account</a>
+    </nav>
+  </header>
+  <div class="hero">
+    <h1>🏔️ Mountain Escapes</h1>
+    <p>Breathe in the crisp air and majestic views</p>
+  </div>
+
+  <div class="container">
+    <div class="card-grid">
+      <!-- Manali -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?q=80&w=3135&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Manali">
+        <div class="card-content">
+          <h3>Manali, Himachal Pradesh</h3>
+          <p>Snowy peaks, adventure sports, and cozy cafes. Rated 4.7 ★</p>
+          <div class="reviews">
+            <p><span class="reviewer">@Anaya</span>: "Had an amazing paragliding experience! The view from Solang Valley is unbeatable."</p>
+            <p><a class="reviewer" href="karan_profile.html">@Karan</a>: "Perfect mix of chill and thrill. Loved the cafes in Old Manali."</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leh-Ladakh -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1619837374214-f5b9eb80876d?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Leh-Ladakh">
+        <div class="card-content">
+          <h3>Leh-Ladakh, Jammu & Kashmir</h3>
+          <p>Breathtaking landscapes and ancient monasteries. Rated 4.9 ★</p>
+          <div class="reviews">
+            <p><a class="reviewer" href="aarav_profile.html">@Aarav</a>: "Stunning views and peaceful monasteries. A must-go for mountain lovers."</p>
+            <p><a class="reviewer" href="smriti_profile.html">@Smriti</a>: "The road trip is a dream! Pangong Lake took my breath away."</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ooty -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1559147861-32715680aef8?q=80&w=3131&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ooty">
+        <div class="card-content">
+          <h3>Ooty, Tamil Nadu</h3>
+          <p>Misty hills, tea gardens, and colonial charm. Rated 4.6 ★</p>
+          <div class="reviews">
+            <p><span class="reviewer">@Megha</span>: "Tea estate tours were lovely. Super relaxing and green everywhere."</p>
+            <p><a class="reviewer" href="raj_profile.html">@Raj</a>: "Cool climate, scenic train ride, and the botanical garden was lush!"</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+  <style>
+    header {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+  <h1><a href="dashboard.html" style="color:white; text-decoration: none;">TrustTrip</a></h1>
+  <nav>
+    <a href="review.html">Write Review</a>
+    <a href="forum.html">Forum</a>
+    <a href="chat.html">Chat</a>
+    <a href="profile.html">My Account</a>
+  </nav>
+</header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@TravelWithAnya - TrustTrip</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+      color: #333;
+    }
+    .profile-header {
+      background: white;
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .profile-header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .profile-info h2 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    .profile-info p {
+      margin-top: 0.5rem;
+      color: #666;
+    }
+    .reviews {
+      padding: 2rem;
+    }
+    .review-box {
+      background: white;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .review-box img {
+      margin-top: 0.5rem;
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .chat-button {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #1e1e2f;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .chat-button:hover {
+      background: #33334d;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-header">
+    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Anya">
+    <div class="profile-info">
+      <h2>@TravelWithAnya</h2>
+      <p>Adventurer | Nature lover | Storyteller</p>
+      <a href="chat.html" class="chat-button">Chat with Anya</a>
+    </div>
+  </div>
+  <div class="reviews">
+    <h3>Recent Reviews</h3>
+    <div class="review-box">
+      <strong>Rishikesh, Uttarakhand</strong>
+      <p>River rafting, yoga and mountain bliss. Rishikesh is a perfect getaway for peace and thrill.</p>
+      <img src="https://images.unsplash.com/photo-1563298723-dcfebaa392e3" alt="Rishikesh Photo">
+    </div>
+    <div class="review-box">
+      <strong>Kasol, Himachal Pradesh</strong>
+      <p>Offbeat beauty, local cafes and serene treks. Kasol never disappoints mountain lovers.</p>
+      <img src="https://images.unsplash.com/photo-1610267286533-6f983a2e7ec3" alt="Kasol Photo">
+    </div>
+  </div>
+</body>
+</html>
