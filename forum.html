@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+  <style>
+    header {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+  <h1><a href="dashboard.html" style="color:white; text-decoration: none;">TrustTrip</a></h1>
+  <nav>
+    <a href="review.html">Write Review</a>
+    <a href="forum.html">Forum</a>
+    <a href="chat.html">Chat</a>
+    <a href="profile.html">My Account</a>
+  </nav>
+</header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forum - TrustTrip</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f2f5;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-bottom: 1.5rem;
+    }
+    .post {
+      background: #f9f9f9;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .post h3 {
+      margin: 0 0 0.5rem 0;
+    }
+    .post button {
+      margin-right: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #1e1e2f;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .post button:hover {
+      background-color: #33334d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Community Forum</h2>
+    <div class="post">
+      <h3>Best places for solo travel in India?</h3>
+      <p>Looking for safe and scenic solo-travel destinations. Any suggestions?</p>
+      <button>Upvote</button>
+      <button>Downvote</button>
+      <textarea placeholder="Add a comment..." style="width:100%;margin-top:0.5rem;"></textarea>
+      <button style="margin-top:0.3rem;">Reply</button>
+    </div>
+    <div class="post">
+      <h3>Hidden gems near Goa beaches?</h3>
+      <p>Not the usual party spots — want peaceful beachside cafes or views.</p>
+      <button>Upvote</button>
+      <button>Downvote</button>
+      <textarea placeholder="Add a comment..." style="width:100%;margin-top:0.5rem;"></textarea>
+      <button style="margin-top:0.3rem;">Reply</button>
+    </div>
+  </div>
+</body>
+</html>
